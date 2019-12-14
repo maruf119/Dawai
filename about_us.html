@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>OUR TEAM</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <style type="text/css">
+    *
+{
+  background: #f1f2f6;
+  margin: 0;
+  padding: 0;
+}
+
+.image-area
+{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.img-wrapper
+{
+  width: 300px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.img-wrapper:before
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 180%;
+  height: 100%;
+  width: 100%;
+  background: rgba(255,255,255,.3);
+  z-index: 1;
+  transform: skew(45deg);
+  transition: .5s;
+}
+
+.img-wrapper:hover:before
+{
+  left: -180%;
+}
+
+.img-wrapper img
+{
+  height: 400px;
+  width: 300px;
+  filter: grayscale(100%);
+  transition: 2s;
+}
+.img-wrapper:hover img
+{
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
+.img-wrapper h2
+{
+  background: tomato;
+  font-family: Poppins;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 10px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transform: perspective(400px) rotateY(90deg);
+  transform-origin: right;
+  transition: 1s;
+}
+
+.img-wrapper:hover h2
+{
+  transform: perspective(400px) rotateY(0deg);
+}
+
+.img-wrapper ul
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: rgba(255,255,255,0);
+}
+
+.img-wrapper ul li
+{
+  background: #333;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  transform: perspective(800px) rotateY(90deg);
+  transition: .5s;
+  transform-origin: left;
+}
+
+.img-wrapper:hover ul li
+{
+  transform: perspective(800px) rotateY(0deg);
+}
+
+.img-wrapper:hover ul li:nth-child(1)
+{
+  transition-delay: .2s;
+}
+
+.img-wrapper:hover ul li:nth-child(2)
+{
+  transition-delay: .6s;
+}
+
+.img-wrapper:hover ul li:nth-child(3)
+{
+  transition-delay: .8s;
+}
+
+.img-wrapper:hover ul li:nth-child(4)
+{
+  transition-delay: 1s;
+}
+
+.img-wrapper ul li a
+{
+  color: tomato;
+  background: rgba(255,255,255,0);
+}
+
+.img-wrapper ul li i
+{
+  color: tomato;
+  background: rgba(255,255,255,0);
+}
+
+.img-wrapper ul li i:hover
+{
+  color: #fff;
+  background: rgba(255,255,255,0);
+}
+
+.row{
+  margin-top: 35vh;
+}
+button {
+width: 100%;
+  background-color: dodgerblue;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+a {
+  text-decoration: none;
+  color: white;
+} 
+a:hover{
+  text-decoration: none;
+  color: white;
+} 
+  </style>
+</head>
+<body>
+<h1 align="center">DEVELOPERS</h1>
+  <div class="row">
+
+    <div class="col-md-6">
+      <div class="image-area">
+      <div class="img-wrapper">
+        <img src="./img/marufmahbub.jpg" alt="Maruf Islam">
+        <h2>MARUF ISLAM</h2>
+        <h3>Software Developer</h3>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/maruf-islam-5168b2122/"> <i class="fab fa-linkedin"></i></a></li>
+          <li><a href="https://www.instagram.com/inscrible/"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://www.facebook.com/me.marufmahbub"><i class="fab fa-facebook"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="image-area">
+      <div class="img-wrapper">
+        <img style="width: 100%" src="./img/rabby.jpg" alt="Rabby Hossain">
+        <h2>Rabby Hossain</h2>
+        <h3>Software Developer</h3>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/maruf-islam-5168b2122/"> <i class="fab fa-linkedin"></i></a></li>
+          <li><a href="https://www.instagram.com/inscrible/"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://www.facebook.com/sopnobaj.ami"><i class="fab fa-facebook"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    </div>
+
+    
+    
+  </div><br>
+  <br>
+  <br><br>
+  <br>
+  <br><br>
+  <br>
+  <br><br>
+  <br>
+<br><br>
+  <button style="font-size:20px"><a href="start.php">BACK TO HOMEPAGE</a></button>
+
+
+    
+</body>
+</html>
